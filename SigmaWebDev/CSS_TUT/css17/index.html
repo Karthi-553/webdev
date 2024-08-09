@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FlexBox</title>
+    <style>
+        /* flex is along with the flex direction
+        By default flex direction is from left to right 
+        flex-direction property has row,row-reverse,column,columnreverse and so on*/
+        .container{
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            /* justify-content: center; */
+            /* flex-direction: row; */
+           /*Justify content has so many properties like space around/between
+             flex start flex-end and so on  AND same applicable to align-items and these display properties are used in parent container */
+            /* align-items: center; */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            /*In flex there are two axes they are main axis and its perpendicular cross axis 
+            JustifyContent and align items are along main-axis
+            These axes can change
+            Normally when flex direction is row the main axis is row wise
+            when flex direction is column the main axis is column wise
+            Remember main size and cross size concepts*/
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+            /* Wrap is used to overcome overflow */
+            /* THERE IS JUSTIFY ITEMS IN FLEXBOX */
+            /* align-content: center; */
+            flex-flow: row wrap;
+            /* gap: 30px; */
+            /* row-gap: 10px;
+            column-gap: 20px;
+            I can be writtin  as-->
+             */
+             gap: 10px 20px;
+             /* The above all are containers properties */
+        }
+        /* The below properties are item properties */
+        .items{
+            flex-grow: 1;
+            width: 92px;
+            height: 92px;
+            border: 2px solid black;
+            /* margin: 4px; */
+            background-color: blueviolet;
+        }
+        .order-100{
+            /* It is a item property */
+            order: 100;
+        }
+        .order-1{
+            /* It is a item property */
+            align-self: last baseline;
+            order: -1;
+        }
+        .item1{
+            flex-grow: 3;
+            align-self: flex-end;
+            /*rememebr about flex-shrink */
+        }
+        /* lower order comes first */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items order-100 item1">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items order-1">7</div>
+        <!-- <div class="items">8</div>
+        <div class="items">10</div>
+        <div class="items">11</div>
+        <div class="items">12</div>
+        <div class="items">13</div>
+        <div class="items">14</div>
+        <div class="items">15</div>
+        <div class="items">16</div>
+        <div class="items">17</div>
+        <div class="items">18</div>
+        <div class="items">19</div>
+        <div class="items">20</div>
+        <div class="items">21</div>
+        <div class="items">22</div>
+        <div class="items">23</div>
+        <div class="items">24</div>
+        <div class="items">25</div>
+        <div class="items">26</div>
+        <div class="items">27</div>
+        <div class="items">28</div>
+        <div class="items">29</div>
+        <div class="items">30</div>
+        <div class="items">31</div>
+        <div class="items">32</div>
+        <div class="items">33</div>
+        <div class="items">34</div>
+        <div class="items order-1">35</div> -->
+        
+    </div>
+</body>
+</html>

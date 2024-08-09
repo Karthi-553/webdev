@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            /* transform: rotate(40deg); */
+             /* transform: rotate(0.125turn);  */
+            /*
+            It also has rotateX,rotateY,rotateZ*/
+            /* transform: rotateX(45deg); */
+            /* transform: scale(1.5);
+            It also has scaleX,scaleY,scaleZ */
+            /* transform: skew(5deg);
+            we have skewX,skewY */
+            /* Translate is most used property */
+            /* transform: translateX(45px); */
+            /* transform: translateY(100%) skewX(40deg) translateX(45%); */
+            /* transform-origin:32% 32% ; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 100vh;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>

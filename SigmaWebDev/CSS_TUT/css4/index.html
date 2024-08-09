@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css BoxModel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: aqua;
+        }
+
+        .box1 {
+            color: yellow;
+            padding: 10px;
+            margin: 5px;
+            border: 5px solid blue;
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+        .box2 {
+            color: red;
+            padding: 10px;
+            margin: 20px;
+            border: 5px solid black;
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+        /* margin collapse read it */
+    </style>
+</head>
+
+<body>
+    <img src="css-box-model.png" alt="BoxModel" height="200">
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box box2">
+        I am another box
+    </div>
+    <img src="margincollapse.png" alt="margincollapse-image">
+</body>
+
+</html>

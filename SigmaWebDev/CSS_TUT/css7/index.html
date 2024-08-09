@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SIZING UNITS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            /* width: 1820px; */
+            border: 2px solid black;
+            width: 80vw;
+            height: 10vh;
+            font-size: 2rem;
+            margin: auto;
+            background-color: aquamarine;
+        }
+        .container
+        {
+             /* width: 1820px; */
+             border: 2px solid black;
+            width: 80vw;
+            /* height: 80vh; */
+            margin: 28px auto;
+            font-size: 16px;
+            background-color: aquamarine;
+        }
+        .container p
+        {
+            /* font-size: 1.5em; */
+            font-size: 2rem;
+        }
+        .mycont{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            /* height: 80vh; */
+            /* font-size: 2rem; */
+            margin: 28px auto;
+            background-color: red;
+            color: yellow;
+        }
+        /* for more units like vmin and vmax and many more see in mdn docs 
+        see percentages also*/
+    </style>
+</head>
+<body>
+     <div class="box">
+        This is a box
+     </div>
+     <div class="container">
+        <p>
+
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit rerum, omnis tenetur dolores reprehenderit magnam, labore alias ea ad at quia dignissimos deleniti. Sed ratione, tenetur mollitia temporibus quibusdam minus consequuntur maxime numquam rerum dolor eaque laborum accusamus ipsam, obcaecati repellat fugit voluptatem dignissimos accusantium tempore deserunt sint error cupiditate minima. Porro minus quae maxime illo.
+        </p>
+     </div>
+     <div class="mycont">
+        I am another container
+     </div>
+</body>
+</html>

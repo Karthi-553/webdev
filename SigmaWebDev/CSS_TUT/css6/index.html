@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity and Cascading</title>
+    <style>
+      /* the specificity of this selector is 1  */
+        h1{
+            color: aqua;
+        }
+/* the specificity of this selector is 10+1*/
+        h1.yellow{
+            color: yellow;
+        }
+/* the specificity of this selector is 10 */
+        .cpurple{
+            color: purple;
+        }
+        /* the specificity of this selector is 10 */
+        /* !important is more specific i.e. 1000 times */
+        .cred{
+            color:red !important;
+        }
+        a{
+            background-color: rgb(164, 149, 213);
+            border-radius: 5px;
+            color: black;
+        }
+        a:hover{
+            background-color: aqua;
+        }
+         /* this one has specificity of 1+10+10+10+10 = 41 
+        a.harryclass.rohan-class[href]:hover
+        {
+            color: purple;
+        } */
+        a:visited{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred cpurple">CSS spcificity</h1>
+    </div>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade" target="_blank">CssCascading</a>
+
+</body>
+</html>
